@@ -1,0 +1,13 @@
+[Unit]
+Description=Memory Dormants
+Requires=multi-user.target
+After=multi-user.target
+AllowIsolate=yes
+
+[Service]
+User=ubuntu
+Type=simple
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/memory-dormants -addressfile rp4-2gb-btc-list-top-with-dormants.txt -outputinterval 1000000 -redisstats=1
+
+

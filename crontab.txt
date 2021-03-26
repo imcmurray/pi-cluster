@@ -1,0 +1,4 @@
+
+# push stats to pistats
+* * * * * /home/ubuntu/redis-push.py >/dev/null 2>&1
+
